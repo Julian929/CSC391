@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echo Canvas</title>
+  <link rel="stylesheet" href="style.css" />
 
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+  <div id="ui">
+    <h1>Echo Canvas</h1>
+    <p>Move your mouse to distort image + sound</p>
+
+    <div class="controls">
+      <label class="upload-btn">
+        Upload Image
+        <input type="file" id="imageUpload" accept="image/*">
+      </label>
+
+      <label class="upload-btn">
+        Upload Sound
+        <input type="file" id="audioUpload" accept="audio/*">
+      </label>
+
+      <button id="playBtn">Play / Pause Sound</button>
+    </div>
+
+    <div class="instructions">
+      <p><strong>Keys:</strong> B = Blur | P = Pixelate | C = Color Shift | R = Reset Ripples</p>
+      <p><strong>Click:</strong> Create a ripple distortion</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
